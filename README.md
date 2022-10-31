@@ -1,4 +1,9 @@
 # Rbg
+
+![Lang](https://img.shields.io/badge/Language-Python-orange)
+![License](https://img.shields.io/github/license/AlfredUFY/rbg)
+![Issues](https://img.shields.io/github/issues/AlfredUFY/rbg?color=red)
+
 Rbg is a simple flask website to remove images background by [Rembg](https://github.com/danielgatis/rembg).
 
 ## Installation
