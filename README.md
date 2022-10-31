@@ -6,6 +6,21 @@
 
 Rbg is a simple flask website to remove images background by [Rembg](https://github.com/danielgatis/rembg).
 
+## Project Tree
+```bash
+.
+├── app.py
+├── LICENSE
+├── __pycache__
+│   └── app.cpython-310.pyc
+├── README.md
+├── requirements.txt
+├── templates
+│   └── index.html
+├── .u2net                   # Download models to this folder by yourself
+└── uploads                  # folder as `UPLOAD_FOLDER` folder in app.py
+```
+
 ## Installation
 
 `pip install -r requirements.txt`
@@ -23,18 +38,3 @@ The available models are:
 
 ## Launch
 `flask run`
-
-## Project Tree
-```bash
-.
-├── app.py
-├── LICENSE
-├── __pycache__
-│   └── app.cpython-310.pyc
-├── README.md
-├── requirements.txt
-├── templates
-│   └── index.html
-|-- .u2net                   # Download models to this folder by yourself
-└── uploads                  # folder as `UPLOAD_FOLDER` folder in app.py
-```
