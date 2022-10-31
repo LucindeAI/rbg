@@ -36,5 +36,5 @@ The available models are:
 ├── templates
 │   └── index.html
 |-- .u2net                   # Download models to this folder by yourself
-└── uploads                  # folder as `UPLOAD_FOLDER` folders in app.py
+└── uploads                  # folder as `UPLOAD_FOLDER` folder in app.py
 ```
