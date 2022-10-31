@@ -27,7 +27,7 @@ Rbg is a simple flask website to remove images background by [Rembg](https://git
 
 ## Models
 
-You should download models to a folder under the project root dir named `.u2net` by yourself.
+**You should download models to the `.u2net` folder by yourself.**
 
 The available models are:
 
