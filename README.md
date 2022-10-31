@@ -1,2 +1,2 @@
-# rbg
-An AI tool to remove images background.
+# Rbg
+Rbg is a simple flask website to remove images background by Rembg.
