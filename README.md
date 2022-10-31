@@ -23,3 +23,18 @@ The available models are:
 
 ## Launch
 `flask run`
+
+## Project Tree
+```bash
+.
+├── app.py
+├── LICENSE
+├── __pycache__
+│   └── app.cpython-310.pyc
+├── README.md
+├── requirements.txt
+├── templates
+│   └── index.html
+|-- .u2net                   # Download models to this folder by yourself
+└── uploads                  # folder as `UPLOAD_FOLDER` folders in app.py
+```
