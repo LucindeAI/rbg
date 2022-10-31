@@ -1,4 +1,6 @@
 import os
+import secrets
+import string
 from flask import (
     Flask,
     flash,
@@ -13,6 +15,9 @@ from rembg import remove
 
 UPLOAD_FOLDER = "./uploads"
 ALLOWED_EXTENSIONS = {"png", "jpg", "jpeg", "gif"}
+
+special_chars = "_!/?"
+length = 10
 
 app = Flask(__name__)
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
@@ -39,7 +44,16 @@ def upload_file():
             folder = "uploads/"
 
             input_image = filename
-            output_image = "output_" + filename
+
+            # generate a random name for result image
+            chars = string.ascii_letters + string.digits
+            while True:
+                output_image = ''.join(secrets.choice(chars)
+                                       for i in range(10)) + '.png'
+                if (any(c.islower() for c in output_image)
+                        and any(c.isupper() for c in output_image)
+                        and sum(c.isdigit() for c in output_image) >= 3):
+                    break
 
             input_path = folder + input_image
             output_path = folder + output_image
